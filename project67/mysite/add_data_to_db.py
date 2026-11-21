@@ -40,30 +40,40 @@ Author.objects.bulk_create(authors)
 
 books = [
     Books(
-        title='война и мир', 
-        author_name='лев толстой', 
-        price=5000
-     ),
+        title='война и мир',
+        author_name='лев толстой',
+        price=5000,
+        description='Роман-эпопея о жизни русского общества во время войны с Наполеоном.',
+        publication_date='1869-01-01'
+    ),
     Books(
-        title='преступление и наказание', 
-        author_name='фёдор достоевский', 
-        price=4500
-     ),
+        title='преступление и наказание',
+        author_name='фёдор достоевский',
+        price=4500,
+        description='Роман о Родионе Раскольникове, его преступлении и нравственных переживаниях.',
+        publication_date='1866-01-01'
+    ),
     Books(
-        title='евгений онегин', 
-        author_name='александр пушкин', 
-        price=3000
-     ),
+        title='евгений онегин',
+        author_name='александр пушкин',
+        price=3000,
+        description='Роман в стихах о любви, жизни и судьбе молодого дворянина Евгения Онегина.',
+        publication_date='1833-01-01'
+    ),
     Books(
-        title='1984', 
-        author_name='джордж оруэлл', 
-        price=4000
-     ),
+        title='1984',
+        author_name='джордж оруэлл',
+        price=4000,
+        description='Антиутопия о тоталитарном обществе, постоянном контроле и отсутствии свободы.',
+        publication_date='1949-06-08'
+    ),
     Books(
-        title='великий гэтсби', 
-        author_name='фрэнсис скотт фицджеральд', 
-        price=3500
-     )
+        title='великий гэтсби',
+        author_name='фрэнсис скотт фицджеральд',
+        price=3500,
+        description='Роман о богатстве, любви и американской мечте в Америке 1920-х годов.',
+        publication_date='1925-04-10'
+    )
 ]
 
 Books.objects.bulk_create(books)

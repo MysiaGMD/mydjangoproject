@@ -6,15 +6,15 @@
     <div class="book-detail">
         <div class="book-info">
             <h1>{{ book.title }}</h1>
-            <p><strong>Автор:</strong> {{ book.author.name }}</p>
+            <p><strong>Автор:</strong> {{ book.author_name }}</p>
             <p><strong>Дата публикации:</strong> {{ book.publication_date }}</p>
-            <p>{{ book.details.description }}</p>
+            <p>{{ book.description }}</p>
         </div>
     </div>
     <div class="author-detail">
         <div class="author-info">
             <h3>Об авторе</h3>
-            <p>{{ book.author.bio }}</p>
+            <p>{{ author.bio }}</p>
         </div>
     </div>
 {% endblock %}

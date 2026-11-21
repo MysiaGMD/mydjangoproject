@@ -19,7 +19,9 @@ class Author(models.Model):
 class Books(models.Model):
     title = models.CharField(max_length=200)     
     author_name = models.CharField(max_length=100) 
-    price = models.IntegerField()                
+    price = models.IntegerField()    
+    description = models.TextField()
+    publication_date = models.DateField(null=True, blank=True)            
 
     class Meta:
         db_table = 'book'      
